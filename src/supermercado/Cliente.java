@@ -1,16 +1,16 @@
-package supermercado;
+    package supermercado;
 
-public class Cliente {
-    private String nome;
-    private String cpf;
-    private String email;
+    public class Cliente {
+        private String nome;
+        private String cpf;
+        private String email;
 
-    public Cliente(String nome, String cpf, String email) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.email = email;
-    }
-
+        public Cliente(String nome, String cpf, String email) {
+            this.nome = nome;
+            this.cpf = cpf;
+            this.email = email;
+        }
+//Remoção getNomeCliente() e setNomeCliente()
     public String getNome() {
         return nome;
     }
@@ -19,14 +19,6 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public String getNomeCliente() {
-        return nome;
-    }
-
-    public void setNomeCliente(String cliente) {
-        this.nome = cliente;
-    }    
-    
     public String getCpf() {
         return cpf;
     }
@@ -42,5 +34,5 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+    }
         
-}

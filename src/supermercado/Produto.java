@@ -19,9 +19,9 @@ public class Produto {
     public double getPrecoUnitario() {
         return precoUnitario;
     }
-    
-    public double calcularTotal(double preco, int quantidade) {
-        return  preco * quantidade;
-    }
+    // Refatoração:calcularTotal()
+    public double calcularTotal() {
+    return this.precoUnitario * this.quantidade;
+}
 
 }
